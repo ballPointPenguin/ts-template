@@ -8,7 +8,8 @@
     "build-ts": "tsc",
     "lint": "npm run tslint",
     "lint:fix": "npm run tslint:fix",
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "jest --no-cache",
+    "test:watch": "jest --no-cache --watchAll",
     "tslint": "tslint -c tslint.json -p tsconfig.json",
     "tslint:fix": "tslint -c tslint.json -p tsconfig.json --fix",
     "watch-ts": "tsc -w"
@@ -30,5 +31,11 @@
     "tslint-config-prettier": "^1.12.0",
     "tslint-plugin-prettier": "^1.3.0",
     "typescript": "^2.8.3"
+  },
+  "dependencies": {
+    "@types/jest": "^22.2.3",
+    "@types/node": "^10.0.3",
+    "jest": "^22.4.3",
+    "ts-jest": "^22.4.4"
   }
 }
