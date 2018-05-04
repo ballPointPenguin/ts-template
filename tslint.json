@@ -7,6 +7,7 @@
     "rules": {
         "prettier": [true, {
             "arrowParens": "always",
+            "semi": false,
             "singleQuote": true
         }]
     }
